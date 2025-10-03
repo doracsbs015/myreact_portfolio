@@ -1,0 +1,24 @@
+/* Basic reset and body styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff0f5;
+  color: #a30057;
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Anchor link hover */
+a {
+  text-decoration: none;
+}

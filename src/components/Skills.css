@@ -1,0 +1,121 @@
+.skills-section {
+  width: 100%;
+  padding: 5rem 2rem;
+  background: #fff0f5;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  color: #d63384;
+  margin-bottom: 2rem;
+}
+
+/* Categories */
+.skills-category {
+  margin-bottom: 3rem;
+}
+
+.skills-category h3 {
+  font-size: 1.4rem;
+  color: #a30057;
+  margin-bottom: 1rem;
+}
+
+/* Grid for icons */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Icon cards */
+.icon-card {
+  background: #ffe6f0;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-card:hover {
+  transform: translateY(-6px);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #d63384;
+}
+
+.icon-card p {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: #a30057;
+}
+
+/* Coding Profiles */
+.coding-profiles {
+  margin-top: 3rem;
+}
+
+.coding-profiles h3 {
+  margin-bottom: 1rem;
+  color: #d63384;
+}
+
+.leet-iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.profile-links a {
+  margin: 0 1rem;
+  color: #d63384;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.profile-links a:hover {
+  color: #a30057;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-grid {
+    gap: 1rem;
+  }
+
+  .icon-card {
+    width: 75px;
+    height: 75px;
+  }
+
+  .icon {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-card {
+    width: 65px;
+    height: 65px;
+  }
+
+  .icon {
+    font-size: 1.4rem;
+  }
+
+  .profile-links a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
