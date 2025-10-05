@@ -11,8 +11,8 @@ html {
 }
 
 body {
-  background: #fff0f5; /* pastel pink background */
-  color: #a30057;
+  background: linear-gradient(135deg, #e6e6fa, #f3e6ff); /* pastel lavender gradient */
+  color: #5b2c6f; /* dark purple for text */
 }
 
 .App {
@@ -23,4 +23,19 @@ body {
 section {
   width: 100%;
   padding-top: 80px; /* to offset fixed navbar */
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Anchor link hover */
+a {
+  text-decoration: none;
+}
+
+* {
+  caret-color: transparent;
 }

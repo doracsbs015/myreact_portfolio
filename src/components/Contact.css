@@ -1,19 +1,63 @@
+/* Resume / CV Section */
+.resume-section {
+  width: 100%;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #eef4ec, #dfe8dd); /* light green gradient */
+  text-align: center;
+}
+
+.resume-section h2 {
+  font-size: 2rem;
+  color: #556b2f; /* dark olive */
+  margin-bottom: 1rem;
+}
+
+.resume-section p {
+  font-size: 1rem;
+  color: #556b2f;
+  margin-bottom: 2rem;
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: #9aae7c; /* main green */
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.btn-download:hover {
+  transform: scale(1.05);
+  background: #b0c48b; /* lighter green on hover */
+}
+
+.download-icon {
+  font-size: 1.2rem;
+}
+
+/* Contact Section */
 .contact-section {
   width: 100%;
   padding: 5rem 2rem;
-  background: #fff0f5;
+  background: #f3f8f2; /* very light green */
   text-align: center;
 }
 
 .contact-section h2 {
   font-size: 2rem;
-  color: #d63384;
+  color: #556b2f;
   margin-bottom: 1rem;
 }
 
 .contact-section p {
   font-size: 1rem;
-  color: #a30057;
+  color: #556b2f;
   margin-bottom: 2rem;
 }
 
@@ -22,14 +66,14 @@
   padding: 0.7rem 1.8rem;
   border-radius: 30px;
   font-weight: 500;
-  background-color: #d63384;
+  background-color: #9aae7c; /* main green */
   color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .btn-email:hover {
-  background-color: #a30057;
+  background-color: #b0c48b; /* lighter green on hover */
 }
 
 /* Social links */
@@ -42,18 +86,19 @@
 
 .social-links a {
   font-size: 2rem;
-  color: #d63384;
+  color: #556b2f; /* dark olive */
   transition: color 0.3s;
 }
 
 .social-links a:hover {
-  color: #a30057;
+  color: #9aae7c; /* main green on hover */
 }
 
 /* Responsive */
 @media (max-width: 480px) {
-  .btn-email {
-    padding: 0.6rem 1.5rem;
+  .btn-email, .btn-download {
+    width: 100%;
+    justify-content: center;
   }
 
   .social-links a {

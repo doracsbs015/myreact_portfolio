@@ -1,61 +1,98 @@
+/* Updated Projects.css - Green Theme Applied */
 .projects-section {
   width: 100%;
   padding: 5rem 2rem;
-  background: #fff0f5;
+  background: linear-gradient(135deg, #eef4ec, #dfe8dd);
   text-align: center;
 }
 
 .projects-section h2 {
   font-size: 2rem;
-  color: #d63384;
+  color: #556b2f;
   margin-bottom: 2.5rem;
 }
 
-/* Grid for project cards */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
-/* Individual project card */
 .project-card {
-  background: #ffe6f0;
+  background: #f3f8f2;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
-/* Project image */
 .project-img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
-/* Project content */
 .project-content {
   padding: 1rem 1.2rem;
 }
 
 .project-content h3 {
   margin: 0.5rem 0;
-  color: #d63384;
+  color: #556b2f;
   font-size: 1.2rem;
 }
 
-.project-content p {
+.project-desc {
   font-size: 0.95rem;
-  color: #a30057;
+  color: #556b2f;
   margin: 0.5rem 0 1rem;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  display: -webkit-box;        /* for WebKit browsers */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;       /* WebKit-specific */
+  
+  /* Standard property for compatibility */
+  line-clamp: 2;               /* Modern browsers that support it */
+  display: box;
+  box-orient: vertical;
+
+  transition: max-height 0.3s ease, -webkit-line-clamp 0.3s ease;
+  max-height: 3em; /* roughly 2 lines */
 }
 
-/* Tech stack */
+.project-desc.expanded {
+  display: block;              /* switch to block for expanded */
+  -webkit-line-clamp: unset;   /* remove clamp for WebKit */
+  line-clamp: unset;           /* remove standard clamp */
+  max-height: 1000px;          /* large enough to show full content */
+  overflow: visible;
+}
+
+
+
+.view-more-btn {
+  background: transparent;
+  border: none;
+  color: #9aae7c;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+.view-more-btn:hover {
+  text-decoration: underline;
+}
+
+
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
@@ -65,39 +102,60 @@
 }
 
 .tech-item {
-  background: #d63384;
+  background: #9aae7c;
   color: #fff;
   padding: 0.3rem 0.6rem;
   border-radius: 12px;
   font-size: 0.75rem;
 }
 
-/* Project links */
 .project-links a {
+  display: inline-block;
   margin: 0 0.5rem;
   text-decoration: none;
-  color: #d63384;
+  color: #556b2f;
   font-weight: bold;
-  transition: color 0.3s;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid #556b2f;
+  border-radius: 8px;
+  transition: all 0.3s;
 }
 
 .project-links a:hover {
-  color: #a30057;
+  background: #556b2f;
+  color: #fff;
+  border-color: #556b2f;
 }
 
-/* Responsive adjustments */
+.toggle-btn {
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background: #9aae7c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.05);
+  background: #b0c48b;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
   .project-img {
     height: 160px;
-  }
-}
-
-@media (max-width: 480px) {
-  .project-img {
-    height: 140px;
-  }
-
-  .tech-item {
-    font-size: 0.7rem;
   }
 }

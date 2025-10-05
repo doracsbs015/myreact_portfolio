@@ -1,15 +1,18 @@
-
 .footer {
   width: 100%;
   padding: 1.5rem 2rem;
-  background: #ffe6f0; /* pastel pink */
+  background: linear-gradient(135deg, #eef4ec, #dfe8dd); /* light green gradient */
   text-align: center;
-  color: #d63384;
+  color: #556b2f; /* dark olive to match theme */
   font-size: 0.9rem;
-  border-top: 1px solid #d63384;
+  border-top: 1px solid #9aae7c; /* subtle green border */
+  transition: background 0.3s, color 0.3s;
 }
 
-/* Responsive */
+.footer:hover {
+  background: #b5cfb0; /* slightly lighter on hover */
+}
+
 @media (max-width: 480px) {
   .footer {
     font-size: 0.8rem;
