@@ -33,7 +33,7 @@ function Contact() {
         <p>If you’d like to collaborate or just say hi, feel free to reach out!</p>
 
         <div className="contact-buttons">
-          <a href="mailto:your.email@example.com" className="btn-email">Email Me</a>
+          <a href="mailto:starkimzyra@gmail.com.com" className="btn-email">Email Me</a>
         </div>
 
         <div className="social-links">
