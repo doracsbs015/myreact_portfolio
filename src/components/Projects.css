@@ -1,4 +1,3 @@
-/* Updated Projects.css - Green Theme Applied */
 .projects-section {
   width: 100%;
   padding: 5rem 2rem;
@@ -24,6 +23,8 @@
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -38,7 +39,10 @@
 }
 
 .project-content {
-  padding: 1rem 1.2rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-content h3 {
@@ -50,48 +54,43 @@
 .project-desc {
   font-size: 0.95rem;
   color: #556b2f;
-  margin: 0.5rem 0 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
   overflow: hidden;
   text-overflow: ellipsis;
-  
-  display: -webkit-box;        /* for WebKit browsers */
+  display: -webkit-box;       /* for WebKit */
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;       /* WebKit-specific */
-  
-  /* Standard property for compatibility */
-  line-clamp: 2;               /* Modern browsers that support it */
-  display: box;
-  box-orient: vertical;
-
-  transition: max-height 0.3s ease, -webkit-line-clamp 0.3s ease;
-  max-height: 3em; /* roughly 2 lines */
+  -webkit-line-clamp: 2;      /* limit lines */
+  white-space: normal;         /* add this to avoid conflicts */
+  text-align: justify;
+  margin-bottom: 0.75rem;
 }
 
 .project-desc.expanded {
-  display: block;              /* switch to block for expanded */
-  -webkit-line-clamp: unset;   /* remove clamp for WebKit */
-  line-clamp: unset;           /* remove standard clamp */
-  max-height: 1000px;          /* large enough to show full content */
+  display: block;
+  -webkit-line-clamp: unset;
+  max-height: 1000px;
   overflow: visible;
 }
 
-
-
+/* View More Details button */
 .view-more-btn {
-  background: transparent;
+  display: block;
+  margin: 0.5rem auto 1rem; /* center under description */
+  padding: 0.5rem 1rem;
+  background: #7ca341;
+  color: #fff;
+  font-weight: 600;
   border: none;
-  color: #9aae7c;
-  font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
-  margin-bottom: 0.5rem;
-  padding: 0;
+  transition: transform 0.3s, background 0.3s;
+  text-align: center;
 }
 
 .view-more-btn:hover {
-  text-decoration: underline;
+  background: #b0c48b;
+  transform: scale(1.05);
 }
-
 
 .tech-stack {
   display: flex;
@@ -109,15 +108,22 @@
   font-size: 0.75rem;
 }
 
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: auto; /* push links to bottom */
+  padding-bottom: 1rem; /* space from card bottom */
+}
+
 .project-links a {
   display: inline-block;
-  margin: 0 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-weight: bold;
   text-decoration: none;
   color: #556b2f;
-  font-weight: bold;
-  padding: 0.4rem 0.8rem;
   border: 2px solid #556b2f;
-  border-radius: 8px;
   transition: all 0.3s;
 }
 

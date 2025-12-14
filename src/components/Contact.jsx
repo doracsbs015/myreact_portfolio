@@ -4,14 +4,28 @@ import "./Contact.css";
 function Contact() {
   return (
     <>
-      {/* Resume / CV Section */}
       <section id="resume" className="resume-section">
-        <h2>Take a Look at My Resume</h2>
-        <p>More professional insights about my work experience and projects.</p>
-        <a href="#" className="btn-download">
-          <FaDownload className="download-icon" /> Download CV
-        </a>
-      </section>
+  <h2>Take a Look at My Resume</h2>
+  <p>More professional insights about my work experience and projects.</p>
+
+  <div className="resume-buttons">
+    {/* Download CV */}
+    <a href="/my_cv.pdf" download className="btn-download">
+      <FaDownload className="download-icon" /> Download CV
+    </a>
+
+    {/* View Resume */}
+    <a
+      href="/my_cv.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn-download"
+    >
+      View Resume
+    </a>
+  </div>
+</section>
+
 
       {/* Contact Section */}
       <section id="contact" className="contact-section">
@@ -23,9 +37,9 @@ function Contact() {
         </div>
 
         <div className="social-links">
-          <a href="https://www.linkedin.com/in/yourId" target="_blank" rel="noreferrer"><FaLinkedin /></a>
-          <a href="https://github.com/yourId" target="_blank" rel="noreferrer"><FaGithub /></a>
-          <a href="https://www.pinterest.com/yourId" target="_blank" rel="noreferrer"><FaPinterest /></a>
+          <a href="https://www.linkedin.com/in/dora-m-ab2819291" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+          <a href="https://github.com/doracsbs015" target="_blank" rel="noreferrer"><FaGithub /></a>
+          <a href="https://in.pinterest.com/starkimzyra/" target="_blank" rel="noreferrer"><FaPinterest /></a>
         </div>
       </section>
     </>

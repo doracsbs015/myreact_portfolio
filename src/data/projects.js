@@ -22,7 +22,7 @@ The project demonstrates the ability to handle real-world e-commerce workflows a
 Dory Bites is designed to provide both customers and administrators with a smooth, interactive experience.`,
     tech: ["MongoDB", "Express", "React", "Node.js", "Stripe"],
     github: "https://github.com/yourusername/dory-bites",
-    live: "https://dorybites.vercel.app",
+    
     image: "project2.jpg"
   },
   {
@@ -47,48 +47,9 @@ The project is implemented using Java and SQL, demonstrating database handling a
 It provides practical experience in managing data input, processing, and reporting via console commands. 
 Expense Tracker serves as a simple but functional financial management tool for everyday use.`,
     tech: ["Java", "SQL"],
-    github: "https://github.com/yourusername/expense-tracker",
-    live: "#",
+    github: "",
+    
     image: "project4.jpg"
-  },
-  {
-    title: "Portfolio Website",
-    description: `This personal portfolio website showcases projects, skills, and professional achievements. 
-It is built with React and Tailwind CSS for a modern, responsive, and interactive experience. 
-The website features sections like About, Projects, Timeline, and Contact, with smooth navigation and animations. 
-It demonstrates frontend development skills, design aesthetics, and attention to user experience. 
-The project can serve as a central hub for potential employers or clients to understand capabilities and expertise. 
-It also highlights adaptability to different devices and screen sizes, making it accessible on both web and mobile.`,
-    tech: ["React", "Tailwind CSS"],
-    github: "https://github.com/yourusername/portfolio",
-    live: "https://yourportfolio.vercel.app",
-    image: "project5.jpg"
-  },
-  {
-    title: "Blog Platform",
-    description: `This blogging platform allows users to create, edit, and comment on posts with a seamless interface. 
-It is developed using the MERN stack, ensuring smooth backend operations and responsive frontend design. 
-Users can authenticate, manage content, and interact via real-time comments. 
-The project emphasizes database management, user interaction, and CRUD functionalities. 
-It is designed to provide a collaborative space for content sharing and engagement. 
-The platform is responsive across devices, making blogging convenient for both desktop and mobile users.`,
-    tech: ["MongoDB", "Express", "React", "Node.js"],
-    github: "https://github.com/yourusername/blog-platform",
-    live: "#",
-    image: "project6.jpg"
-  },
-  {
-    title: "Task Manager",
-    description: `Task Manager is a productivity application designed to help users organize tasks, set deadlines, and prioritize activities. 
-It provides a user-friendly interface to create, update, and track progress for each task. 
-Built with React and Node.js, the app showcases full-stack development skills, including backend APIs and frontend interactivity. 
-Users can manage multiple projects, view summaries, and ensure timely completion of tasks. 
-The application emphasizes responsive design, data persistence, and real-time updates. 
-It is an effective tool for improving personal productivity and project management.`,
-    tech: ["React", "Node.js", "CSS"],
-    github: "https://github.com/yourusername/task-manager",
-    live: "#",
-    image: "project7.jpg"
   }
 ];
 

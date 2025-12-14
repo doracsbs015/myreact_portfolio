@@ -6,7 +6,7 @@ import "./Hero.css";
 
 function Hero() {
   const words = [
-    "Hi, I'm Dora.",
+    "Hi, I'm Dhora M.",
     "I'm a Full Stack Developer.",
     "I'm a Problem Solver.",
     "I'm a Content Writer."

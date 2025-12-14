@@ -25,10 +25,11 @@ function Navbar() {
           <li><a href="#projects" onClick={handleLinkClick}>Projects</a></li>
           <li><a href="#contact" onClick={handleLinkClick}>Contact</a></li>
           <li className="download-cv">
-            <a href="#!" title="Download my resume">
-              <FaDownload /> 
-            </a>
-          </li>
+  <a href="/my_cv.pdf" download title="Download my resume">
+    <FaDownload />
+  </a>
+</li>
+
         </ul>
 
         {/* Hamburger */}

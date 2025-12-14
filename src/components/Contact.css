@@ -93,6 +93,14 @@
 .social-links a:hover {
   color: #9aae7c; /* main green on hover */
 }
+/* Resume buttons wrapper */
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem; /* space between buttons */
+  flex-wrap: wrap;
+}
+
 
 /* Responsive */
 @media (max-width: 480px) {
