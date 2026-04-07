@@ -59,7 +59,7 @@ Built with React and integrated with Google Analytics to track engagement and pr
 Built using Java and SQL, demonstrating database handling and object-oriented programming.`,
     tech: ["Java", "SQL"],
     github: "",
-    image: "exp.png"
+    image: "exp.jpg"
   }
 ];
 
