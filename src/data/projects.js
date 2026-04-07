@@ -1,55 +1,65 @@
 const projects = [
   {
-    title: "FinSight - Finanace Dashboard",
-    description: `FinSight is an advanced finance dashboard designed to help users analyze key performance indicators such as profit, sales, and growth. 
-It visualizes data using dynamic charts and provides predictive insights using Regression.js to forecast next year's sales. 
-The project includes a smart chatbot named FinBird that answers user queries related to financial metrics. 
-It is built with React, TypeScript, Material UI, Node.js, and Recharts, ensuring a smooth and interactive user experience. 
-The backend is deployed on Render and the frontend on Vercel. 
-FinSight is compatible with any dataset that follows similar financial structures, making it highly versatile for analysis.`,
-    tech: ["React", "TypeScript", "Material UI", "Node.js", "Recharts","ML- regression.js"],
+    title: "Noolaga Thozhan - Digital Library with Real-Time Chat",
+    description: `Full-stack digital library platform with JWT-based role authentication for users and librarians. 
+Includes automated per-minute fine calculation using node-cron, a reservation queue with auto book assignment, 
+and category-based recommendations from user borrow history. Features reader discovery with real-time chat 
+using Socket.io and MongoDB, plus an admin panel for book management, approvals, and transaction tracking.`,
+    tech: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "JWT"],
+    github: "https://github.com/doracsbs015/Book-Q",
+    live: "https://book-q-psi.vercel.app/",
+    image: "bookq.png"
+  },
+
+  {
+    title: "Kind & Cruel - Social Initiative Platform",
+    description: `MERN stack positivity-sharing platform where QR-coded physical cards direct users to categorized quotes. 
+Includes anonymous feedback, email subscriptions via Nodemailer, and an admin dashboard for managing quotes, 
+subscribers, and feedback. Google Analytics integration tracks user engagement and interactions.`,
+    tech: ["React", "Node.js", "Express", "MongoDB", "Nodemailer", "Google Analytics"],
+    github: "https://github.com/doracsbs015/KIND-AND-CRUEL",
+    live: "https://kindandcruel.vercel.app/",
+    image: "knc.png"
+  },
+
+  {
+    title: "SkinSights - AI Skincare Ingredients Analyzer",
+    description: `AI-powered skincare platform using Hugging Face APIs to determine skin type via an interactive quiz. 
+Supports ingredient analysis through text or OCR with Tesseract.js, generating safety scores and insights. 
+Includes personalized product recommendations, analysis history, and an admin panel to manage products and data.`,
+    tech: ["React", "Node.js", "Express", "MongoDB", "Hugging Face API", "Tesseract.js"],
+    github: "https://github.com/doracsbs015/Skinsights",
+    live: "https://skinsights.vercel.app/",
+    image: "ss.png"
+  },
+
+  {
+    title: "FinSight - Finance Dashboard",
+    description: `Interactive finance dashboard visualizing profit, sales, and growth metrics with dynamic charts. 
+Uses Regression.js to forecast next year's sales and includes a chatbot (FinBird) for answering finance queries.`,
+    tech: ["React", "TypeScript", "Material UI", "Node.js", "Recharts", "Regression.js"],
     github: "https://github.com/doracsbs015/finsight_frontend.git",
     live: "https://finsight-iota.vercel.app/",
-    image: "project1.png"
+    image: "fin.png"
   },
-  {
-    title: "Dory Bites - Food Ordering Platform",
-    description: `Dory Bites is a full-featured food ordering application built with the MERN stack. 
-It allows users to browse menu items, add them to the cart, and place orders seamlessly. 
-The application integrates Stripe for secure payment processing. 
-An admin dashboard provides functionalities to manage orders, track sales, and maintain inventory efficiently. 
-The project demonstrates the ability to handle real-world e-commerce workflows and database management. 
-Dory Bites is designed to provide both customers and administrators with a smooth, interactive experience.`,
-    tech: ["MongoDB", "Express", "React", "Node.js", "Stripe"],
-    github: "https://github.com/yourusername/dory-bites",
-    
-    image: "project2.jpg"
-  },
+
   {
     title: "TRAWBS - Compatibility Checker Game",
-    description: `TRAWBS is a two-player web game focused on determining personality compatibility. 
-Players answer a series of questions, and the application analyzes their responses to calculate compatibility scores. 
-It is built using React and integrated with Google Analytics to track user engagement. 
-The project demonstrates real-time interaction, data analysis, and a fun approach to personality assessment. 
-TRAWBS offers a gamified experience while providing meaningful insights into user compatibility. 
-It emphasizes responsive design and interactive feedback to enhance engagement.`,
+    description: `Two-player web game that evaluates personality compatibility through question-based analysis. 
+Built with React and integrated with Google Analytics to track engagement and provide an interactive gamified experience.`,
     tech: ["React", "Google Analytics"],
     github: "https://github.com/doracsbs015/TrawbsGame.git",
     live: "https://trawbsgame.vercel.app/",
-    image: "project3.png"
+    image: "trawbs.png"
   },
+
   {
     title: "Expense Tracker",
-    description: `Expense Tracker is a console-based application that helps users manage and categorize their expenses efficiently. 
-Users can create accounts, add, and view expenses by category. 
-Administrators have the ability to manage users and monitor overall financial summaries. 
-The project is implemented using Java and SQL, demonstrating database handling and object-oriented programming concepts. 
-It provides practical experience in managing data input, processing, and reporting via console commands. 
-Expense Tracker serves as a simple but functional financial management tool for everyday use.`,
+    description: `Console-based financial management tool allowing users to add and categorize expenses. 
+Built using Java and SQL, demonstrating database handling and object-oriented programming.`,
     tech: ["Java", "SQL"],
     github: "",
-    
-    image: "project4.jpg"
+    image: "exp.png"
   }
 ];
 

@@ -10,13 +10,13 @@ function Contact() {
 
   <div className="resume-buttons">
     {/* Download CV */}
-    <a href="/my_cv.pdf" download className="btn-download">
+    <a href="/Dhora_resume_3.pdf" download className="btn-download">
       <FaDownload className="download-icon" /> Download CV
     </a>
 
     {/* View Resume */}
     <a
-      href="/my_cv.pdf"
+      href="/Dhora_resume_3.pdf"
       target="_blank"
       rel="noopener noreferrer"
       className="btn-download"
